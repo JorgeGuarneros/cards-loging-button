@@ -1,0 +1,27 @@
+<form [formGroup]=datos>
+<div class="row">
+  <div class="col-md-6 mx-auto mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-center">Iniciar sesion</h1>
+          <div class="form-group">
+            <label>Correo</label>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="ejemplo@gmail.com">
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="***********">
+          </div>
+          <button [disabled]="datos.invalid" type="submit" class="btn btn-dark" style="background-color: #000000;">Iniciar Sesion</button> 
+          <div class="form-group mt-3">
+            <p>Crear una nueva cuenta<a [routerLink]="['/signup']"> Registrarse </a></p>
+          </div>
+          <div class="form-group mt-3">
+            <p><a [routerLink]="['/forgot']"> Olvidaste la contraseña? </a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>

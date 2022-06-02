@@ -1,0 +1,30 @@
+<form [formGroup]=datos>
+<div class="row">
+  <div class="col-md-6 mx-auto mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-center">Crear cuenta</h1>
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="form-control" formControlName="nombre"/>
+          </div>
+          <div class="form-group">
+            <label>Apellido Paterno</label>
+            <input type="text" class="form-control" formControlName="apellidoP"/>
+            <label >Apellido Materno</label>
+            <input type="text" class="form-control" formControlName="apellidoM"/>
+          </div>
+          <div class="form-group">
+            <label>Correo</label>
+            <input type="email" class="form-control" formControlName="email"/>
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" class="form-control" formControlName="password"/>
+          </div>
+          <button [disabled]="datos.invalid" type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: #970000;">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>

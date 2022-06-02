@@ -1,0 +1,14 @@
+<div class="card-deck">
+  <div class="card" *ngFor="let i of listaproducto" style="width: 18rem;">
+    <img class="card-img-top" src="{{i.imagen}}" class="card-img-top d-block w-50" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{i.nombre}}</h5>
+      <p class="card-text">{{i.descripcion}}</p>
+    </div>
+    <div class="card-footer">
+      <ul>
+      <button (click)="detalleProducto(i.id)">Aceptar</button>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="producto" style="color:#000000">Galeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="busqueda()" style="color:#000000" >Busqueda</a>
+        </li>
+
+        <li *ngIf="bandera2" class="nav-item">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </li>
+
+        <li *ngIf="bandera2" class="nav-item">
+          <button class="btn btn-outline-success" type="submit" class="btn btn-light">Buscar</button>
+        </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="login" style="color:#000000">Login</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="signup" style="color:#000000">SingUp</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
